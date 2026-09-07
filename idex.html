@@ -11,7 +11,7 @@
             theme: {
                 extend: {
                     colors: {
-                        slate: { 850: '#151f32', 900: '#0f172a' },
+                        slate: { 850: '#151f32', 900: '#0f172a', 950: '#090d16' },
                         amber: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' }
                     }
                 }
@@ -19,14 +19,15 @@
         }
     </script>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-900">
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950">
 
-    <!-- HEADER / NAVEGACIÓN -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+    <!-- HEADER / NAVEGACIÓN SUPERIOR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-slate-800 border border-amber-500/30 rounded-xl flex items-center justify-center shadow-inner relative overflow-hidden">
-                    <span class="text-amber-400 font-black text-lg tracking-tighter">V<span class="text-white">x</span></span>
+                <div class="w-10 h-10 bg-slate-800 border border-amber-500/40 rounded-xl flex items-center justify-center shadow-inner relative overflow-hidden">
+                    <div class="absolute inset-0 bg-amber-500/10 backdrop-blur-sm"></div>
+                    <span class="relative text-amber-400 font-black text-lg tracking-tighter">V<span class="text-white">x</span></span>
                 </div>
                 <div>
                     <span class="text-[10px] font-extrabold tracking-widest text-amber-400 uppercase block">Vigix S.A.</span>
@@ -34,94 +35,132 @@
                 </div>
             </div>
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                <a href="#beneficios" class="hover:text-amber-400 transition">Beneficios</a>
+                <a href="#solucion" class="hover:text-amber-400 transition">Solución</a>
                 <a href="#caracteristicas" class="hover:text-amber-400 transition">Características</a>
-                <a href="#demo" class="hover:text-amber-400 transition">Prueba 30 Días</a>
+                <a href="#seguridad" class="hover:text-amber-400 transition">Tecnología</a>
             </nav>
             <div>
-                <a href="#demo" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-amber-500/25 transition">
-                    Acceder a Demo
+                <a href="https://wa.me/54911XXXXXXXX?text=Hola,%20quiero%20solicitar%20una%20demo%20de%20Vigix" target="_blank" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-amber-500/20 transition">
+                    Solicitar Demo
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- HERO SECTION (PRINCIPAL) -->
-    <section class="pt-32 pb-20 md:pt-44 md:pb-32 relative overflow-hidden bg-gradient-to-b from-slate-950 to-slate-900">
+    <!-- HERO SECTION -->
+    <section class="pt-36 pb-24 md:pt-48 md:pb-32 relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
         <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent pointer-events-none"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <span class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-6">
-                🚀 Software Exclusivo para Empresas de Seguridad Privada
-            </span>
-            <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight max-w-4xl mx-auto leading-tight mb-6">
-                Digitaliza el control de tus <span class="text-amber-400">guardias y operaciones</span> en tiempo real
+            <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6 shadow-sm">
+                ⚡ Software de Nueva Generación para Seguridad Privada
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight max-w-5xl mx-auto leading-[1.1] mb-6">
+                Control total de asistencia y operaciones <span class="text-amber-400">en tiempo real</span>
             </h1>
-            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-                Evita fraudes en fichadas, ausentismo sin aviso y planillas de Excel desordenadas. Asegura la presencia exacta de tu personal con geolocalización y validación fotográfica.
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Elimina los fraudes de fichada, el ausentismo no reportado y las planillas manuales. Vigix garantiza que tus guardias marquen exactamente en el objetivo asignado.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#demo" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-base px-8 py-4 rounded-xl shadow-xl shadow-amber-500/20 transition transform hover:-translate-y-0.5">
-                    Solicitar Demo Gratis (30 Días)
+                <a href="https://wa.me/54911XXXXXXXX?text=Hola,%20quiero%20empezar%20la%20prueba%20gratuita%20de%2030%20días%20de%20Vigix" target="_blank" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-base px-8 py-4 rounded-xl shadow-xl shadow-amber-500/25 transition transform hover:-translate-y-0.5 text-center">
+                    Prueba Gratuita por 30 Días
                 </a>
-                <a href="#caracteristicas" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-base px-8 py-4 rounded-xl border border-slate-700 transition">
-                    Ver Características
+                <a href="#solucion" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-base px-8 py-4 rounded-xl border border-slate-700 transition text-center">
+                    Conocer Funciones
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN DE BENEFICIOS / VALOR -->
-    <section id="beneficios" class="py-20 bg-slate-900/50 border-t border-slate-800">
+    <!-- SECCIÓN DE PROBLEMA VS SOLUCIÓN -->
+    <section id="solucion" class="py-24 bg-slate-900/60 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-white mb-4">¿Por qué las agencias de seguridad eligen Vigix?</h2>
-                <p class="text-slate-400">Diseñado específicamente para resolver los dolores de cabeza diarios del área operativa.</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Diseñado para resolver la operativa real</h2>
+                <p class="text-slate-400 text-base">Olvídate de los reportes dudosos y las llamadas constantes para saber si el vigilante cubrió su turno.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="bg-slate-800/50 border border-slate-800 p-8 rounded-2xl relative">
-                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center font-bold text-xl mb-6 border border-amber-500/20">📍</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Control GPS en Tiempo Real</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Monitorea geocercas precisas (radio de 30-50m). Los vigilantes solo pueden marcar asistencia si se encuentran físicamente en el objetivo asignado.</p>
+                <div class="bg-slate-800/40 border border-slate-800/80 p-8 rounded-2xl hover:border-amber-500/40 transition duration-300">
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 border border-amber-500/20">📍</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Geocercas de Alta Precisión</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Configura radios específicos de 30 a 50 metros por objetivo. Si el guardia intenta fichar fuera de rango, el sistema bloquea automáticamente el registro.</p>
                 </div>
                 <!-- Card 2 -->
-                <div class="bg-slate-800/50 border border-slate-800 p-8 rounded-2xl relative">
-                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center font-bold text-xl mb-6 border border-amber-500/20">📸</div>
+                <div class="bg-slate-800/40 border border-slate-800/80 p-8 rounded-2xl hover:border-amber-500/40 transition duration-300">
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 border border-amber-500/20">📸</div>
                     <h3 class="text-xl font-bold text-white mb-3">Validación Fotográfica</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Cada fichaje exige una fotografía obligatoria del personal en el puesto, eliminando suplantaciones de identidad y fraudes de compañeros.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Fichadas respaldadas por una fotografía obligatoria en tiempo real. Evita suplantaciones y asegura que el personal correcto esté cumpliendo funciones.</p>
                 </div>
                 <!-- Card 3 -->
-                <div class="bg-slate-800/50 border border-slate-800 p-8 rounded-2xl relative">
-                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center font-bold text-xl mb-6 border border-amber-500/20">📊</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Reportes para Liquidación</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Genera reportes automáticos y fidedignos de horas trabajadas, llegadas tarde e incidencias listos para exportar y facilitar el pago de sueldos.</p>
+                <div class="bg-slate-800/40 border border-slate-800/80 p-8 rounded-2xl hover:border-amber-500/40 transition duration-300">
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 border border-amber-500/20">📈</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Reportes Listos para Sueldos</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Consolida las horas trabajadas, llegadas tarde y novedades de forma automática. Exporta los datos de manera limpia para acelerar la liquidación.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- LLAMADO A LA ACCIÓN / DEMO -->
-    <section id="demo" class="py-20 bg-gradient-to-t from-slate-950 to-slate-900 border-t border-slate-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="bg-slate-800/80 border border-amber-500/30 p-10 sm:p-14 rounded-3xl shadow-2xl relative overflow-hidden">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Empieza tu prueba gratuita hoy</h2>
-                <p class="text-slate-300 max-w-xl mx-auto mb-8">
-                    Prueba **Vigix** en tu empresa de seguridad durante 30 días sin compromiso. Comprueba la velocidad y el control absoluto de tus operaciones.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="https://wa.me/TU_NUMERO_DE_WHATSAPP?text=Hola,%20quiero%20solicitar%20la%20prueba%20gratuita%20de%2030%20días%20de%20Vigix" target="_blank" class="w-full sm:w-auto bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
-                        💬 Contactar por WhatsApp
-                    </a>
+    <!-- SECCIÓN DE TECNOLOGÍA Y CONFIANZA -->
+    <section id="caracteristicas" class="py-24 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-widest block mb-2">Seguridad y Control</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Protección contra manipulación y máxima velocidad</h2>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        Vigix cuenta con un motor sincronizado por red que impide que los operadores o vigilantes manipulen la hora del celular para fraguar fichadas. Todo queda registrado con hora oficial inalterable.
+                    </p>
+                    <ul class="space-y-4 text-slate-300 text-sm font-medium">
+                        <li class="flex items-center gap-3">
+                            <span class="text-amber-400 font-bold">✓</span> Panel de administración web liviano y rápido.
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-amber-400 font-bold">✓</span> Almacenamiento seguro en la nube en tiempo real.
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-amber-400 font-bold">✓</span> Implementación inmediata sin instalaciones complejas.
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl shadow-2xl relative">
+                    <div class="absolute -top-3 -right-3 bg-amber-500 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full shadow-md">
+                        SaaS Profesional
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/50 flex items-center justify-between">
+                            <span class="text-xs font-bold text-slate-400">ESTADO DEL SISTEMA</span>
+                            <span class="inline-flex items-center gap-1.5 text-emerald-400 text-xs font-bold"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Online 24/7</span>
+                        </div>
+                        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/50">
+                            <div class="text-xs text-slate-400 mb-1">Control de Objetivos Activos</div>
+                            <div class="text-lg font-black text-white tracking-wide">100% Sincronizado con GPS</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- LLAMADO A LA ACCIÓN FINAL -->
+    <section class="py-24 bg-gradient-to-t from-slate-900 to-slate-950 border-t border-slate-800 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-5xl font-black text-white mb-6">Lleva tu empresa de seguridad al siguiente nivel</h2>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-10">
+                Empieza a utilizar **Vigix** hoy mismo con una prueba totalmente bonificada por 30 días. Sin compromisos.
+            </p>
+            <a href="https://wa.me/54911XXXXXXXX?text=Hola,%20quiero%20coordinar%20la%20prueba%20gratuita%20de%20Vigix" target="_blank" class="inline-flex items-center justify-center bg-green-600 hover:bg-green-500 text-white font-extrabold text-lg px-10 py-5 rounded-2xl shadow-xl shadow-green-900/30 transition transform hover:-translate-y-0.5 gap-3">
+                💬 Hablar por WhatsApp y Activar Demo
+            </a>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-950 py-10 border-t border-slate-900 text-center text-xs text-slate-500">
-        <div class="max-w-7xl mx-auto px-4">
-            <p>&copy; 2026 Vigix - Plataforma de Control Operativo y Asistencia. Todos los derechos reservados.</p>
+    <footer class="bg-slate-950 py-12 border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <div class="text-sm font-bold text-slate-300">Vigix — Plataforma de Control Operativo y Asistencia</div>
+            <p>&copy; 2026 Vigix S.A. Todos los derechos reservados.</p>
         </div>
     </footer>
 
