@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vigix | Plataforma de Control Operativo y Asistencia</title>
+    <title>Vigix | Plataforma de Control Operativo, Asistencia y Botón de Pánico</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,7 +12,8 @@
                 extend: {
                     colors: {
                         slate: { 850: '#151f32', 900: '#0f172a', 950: '#090d16' },
-                        amber: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' }
+                        amber: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' },
+                        rose: { 500: '#f43f5e', 600: '#e11d48', 950: '#4c0519' }
                     }
                 }
             }
@@ -36,6 +37,7 @@
             </div>
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
                 <a href="#solucion" class="hover:text-amber-400 transition">Solución</a>
+                <a href="#panico" class="text-rose-400 hover:text-rose-300 transition flex items-center gap-1 font-bold"><span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span> Botón de Pánico</a>
                 <a href="#caracteristicas" class="hover:text-amber-400 transition">Características</a>
                 <a href="#tecnologia" class="hover:text-amber-400 transition">Tecnología</a>
                 <a href="#contacto" class="hover:text-amber-400 transition">Contacto</a>
@@ -65,18 +67,59 @@
                 ⚡ Software de Nueva Generación para Seguridad Privada
             </div>
             <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight max-w-4xl mx-auto leading-tight mb-6">
-                Control total de asistencia y operaciones <span class="text-amber-400">en tiempo real</span>
+                Control total de asistencia, operaciones y <span class="text-rose-500">Alerta de Pánico en Vivo</span>
             </h1>
             <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Elimina los fraudes de fichada, el ausentismo no reportado y las planillas manuales. Vigix garantiza que tus guardias marquen exactamente en el objetivo asignado.
+                Elimina los fraudes de fichada, protege a tus vigiladores en servicio con alertas inmediatas a la base operativa y automatiza la gestión de tus objetivos.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a href="#contacto" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-base px-8 py-4 rounded-xl shadow-xl shadow-amber-500/25 transition transform hover:-translate-y-0.5 text-center">
                     Prueba Gratuita por 30 Días
                 </a>
-                <a href="#solucion" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-base px-8 py-4 rounded-xl border border-slate-700 transition text-center">
-                    Conocer Funciones
+                <a href="#panico" class="w-full sm:w-auto bg-rose-950/60 hover:bg-rose-900/60 text-rose-300 font-semibold text-base px-8 py-4 rounded-xl border border-rose-600/50 transition text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-shield-cat"></i> Ver Botón de Pánico
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NUEVA: BOTÓN DE PÁNICO DESTACADO -->
+    <section id="panico" class="py-24 bg-slate-950 border-t border-slate-800 relative overflow-hidden">
+        <div class="absolute inset-0 bg-rose-950/10 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6">
+                        🚨 Seguridad Activa 24/7
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Botón de Pánico Integrado: Respuesta inmediata de la Base</h2>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        Sabemos que la seguridad de tus agentes es lo primero. Vigix incluye un sistema de alerta de pánico por **pulsación sostenida de 3 segundos** directamente desde el celular del vigilador.
+                    </p>
+                    <ul class="space-y-4 text-slate-300 text-sm font-medium">
+                        <li class="flex items-center gap-3"><span class="text-rose-500 font-bold">✓</span> Envío automático de coordenadas GPS exactas y enlace a Google Maps.</li>
+                        <li class="flex items-center gap-3"><span class="text-rose-500 font-bold">✓</span> Recepción instantánea en tiempo real en la pantalla del Centro de Operaciones.</li>
+                        <li class="flex items-center gap-3"><span class="text-rose-500 font-bold">✓</span> Restricción inteligente: Solo operable si el agente se encuentra formalmente en servicio.</li>
+                    </ul>
+                </div>
+                
+                <!-- SIMULADOR VISUAL DEL BOTÓN DE PÁNICO -->
+                <div class="bg-slate-900 border-2 border-rose-600/50 p-8 rounded-3xl shadow-2xl text-center space-y-6 relative">
+                    <div class="absolute -top-3 right-6 bg-rose-600 text-white text-xs font-black uppercase px-3 py-1 rounded-full shadow-md animate-pulse">
+                        Módulo Crítico
+                    </div>
+                    <div class="text-xs uppercase font-extrabold tracking-wider text-rose-400">Simulador de Alerta en Plataforma</div>
+                    <h3 class="text-xl font-bold text-white">¿Situación de peligro inminente?</h3>
+                    <p class="text-xs text-slate-400 max-w-sm mx-auto">
+                        Al presionar el botón en la app, la base operativa recibe una señal de emergencia sonora y visual con la ubicación del objetivo al instante.
+                    </p>
+                    <div class="bg-rose-950/40 border border-rose-600/40 py-6 px-4 rounded-2xl">
+                        <div class="w-20 h-20 bg-rose-600 text-white rounded-full flex items-center justify-center mx-auto text-3xl shadow-lg shadow-rose-600/50 animate-bounce">
+                            🛡️
+                        </div>
+                        <span class="text-xs font-mono text-rose-300 mt-4 block">MANTENER PRESIONADO (3s)</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -86,7 +129,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Diseñado para resolver la operativa real</h2>
-                <p class="text-slate-400 text-base">Olvídate de los reportes dudosos y las llamadas constantes para saber si el vigilante cubrió su turno.</p>
+                <p class="text-slate-400 text-base">Olvídate de los reportes dudosos y las llamadas constantes para saber si el vigilante cubrió su turno o si necesita asistencia.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -117,11 +160,11 @@
                     <span class="text-amber-400 text-xs font-bold uppercase tracking-widest block mb-2">Operación sin Fricciones</span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Velocidad y control absoluto en una sola pantalla</h2>
                     <p class="text-slate-400 mb-6 leading-relaxed">
-                        El panel de administración centraliza la información de todos tus objetivos en tiempo real. Monitorea quién ingresó, quién está ausente y emite alertas inmediatas ante cualquier desvío operativo.
+                        El panel de administración centraliza la información de todos tus objetivos en tiempo real. Monitorea quién ingresó, quién está ausente y recibe alertas inmediatas de pánico ante cualquier emergencia.
                     </p>
                     <ul class="space-y-4 text-slate-300 text-sm font-medium">
                         <li class="flex items-center gap-3"><span class="text-amber-400 font-bold">✓</span> Interfaz intuitiva apta para operadores sin experiencia técnica.</li>
-                        <li class="flex items-center gap-3"><span class="text-amber-400 font-bold">✓</span> Historial completo de fichadas con fecha, hora y coordenadas GPS.</li>
+                        <li class="flex items-center gap-3"><span class="text-amber-400 font-bold">✓</span> Historial completo de fichadas, novedades y alertas críticas con GPS.</li>
                         <li class="flex items-center gap-3"><span class="text-amber-400 font-bold">✓</span> Compatible con cualquier smartphone mediante acceso web rápido.</li>
                     </ul>
                 </div>
@@ -131,12 +174,12 @@
                     </div>
                     <div class="space-y-4">
                         <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/50 flex items-center justify-between">
-                            <span class="text-xs font-bold text-slate-400">ESTADO DEL SISTEMA</span>
-                            <span class="inline-flex items-center gap-1.5 text-emerald-400 text-xs font-bold"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Online 24/7</span>
+                            <span class="text-xs font-bold text-slate-400">CENTRO DE OPERACIONES</span>
+                            <span class="inline-flex items-center gap-1.5 text-emerald-400 text-xs font-bold"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Monitoreando</span>
                         </div>
-                        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/50">
-                            <div class="text-xs text-slate-400 mb-1">Integridad de Datos</div>
-                            <div class="text-lg font-black text-white tracking-wide">Base en la Nube de Alta Confiabilidad</div>
+                        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/50 flex items-center justify-between">
+                            <span class="text-xs font-bold text-slate-400">ESTADO DE ALERTAS DE PÁNICO</span>
+                            <span class="text-rose-400 text-xs font-bold uppercase">Activo / En Vivo</span>
                         </div>
                     </div>
                 </div>
@@ -150,7 +193,7 @@
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-amber-400 text-xs font-bold uppercase tracking-widest block mb-2">Arquitectura y Seguridad</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Tecnología de punta diseñada contra manipulaciones</h2>
-                <p class="text-slate-400 text-base">Protegemos tu negocio asegurando que cada registro de asistencia sea 100% legal y transparente.</p>
+                <p class="text-slate-400 text-base">Protegemos tu negocio asegurando que cada registro de asistencia y aviso de emergencia sea 100% legal y transparente.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -162,12 +205,12 @@
                 <div class="bg-slate-800/50 border border-slate-700/60 p-8 rounded-2xl">
                     <div class="text-amber-400 font-mono text-xs font-bold mb-3">02 // GEOLOCALIZACIÓN</div>
                     <h3 class="text-lg font-bold text-white mb-2">Validación de Coordenadas API</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Uso intensivo de los servicios de geoposicionamiento del dispositivo con algoritmos de distancia para validar el radio estricto de cobertura.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Uso intensivo de los servicios de geoposicionamiento del dispositivo con algoritmos de distancia tanto para fichadas como para alertas de pánico.</p>
                 </div>
                 <div class="bg-slate-800/50 border border-slate-700/60 p-8 rounded-2xl">
                     <div class="text-amber-400 font-mono text-xs font-bold mb-3">03 // RENDIMIENTO</div>
                     <h3 class="text-lg font-bold text-white mb-2">Base de Datos en Tiempo Real</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Infraestructura optimizada para responder al instante, garantizando fluidez operativa aun cuando cientos de agentes marquen asistencia.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Infraestructura optimizada para responder al instante, garantizando fluidez absoluta ante emergencias críticas y asistencia masiva.</p>
                 </div>
             </div>
         </div>
@@ -181,7 +224,7 @@
                     <span class="text-amber-400 text-xs font-bold uppercase tracking-widest block mb-2">Ponte en Contacto</span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Comienza tu prueba de 30 días hoy mismo</h2>
                     <p class="text-slate-400 mb-8 leading-relaxed">
-                        ¿Tienes dudas sobre cómo adaptar Vigix a tu empresa de seguridad? Escríbenos directamente o completa el formulario y un especialista se pondrá en contacto contigo.
+                        ¿Tienes dudas sobre cómo adaptar Vigix y el botón de pánico a tu empresa de seguridad? Escríbenos directamente o completa el formulario y un especialista se pondrá en contacto contigo.
                     </p>
 
                     <div class="space-y-6">
@@ -232,7 +275,7 @@
     <!-- FOOTER -->
     <footer class="bg-slate-950 py-12 border-t border-slate-900 text-center text-xs text-slate-500">
         <div class="max-w-7xl mx-auto px-4 space-y-3">
-            <div class="text-sm font-bold text-slate-300">Vigix — Plataforma de Control Operativo y Asistencia</div>
+            <div class="text-sm font-bold text-slate-300">Vigix — Plataforma de Control Operativo, Asistencia y Botón de Pánico</div>
             <p>&copy; 2026 Vigix S.A. Todos los derechos reservados.</p>
         </div>
     </footer>
