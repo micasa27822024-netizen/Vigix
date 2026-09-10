@@ -262,6 +262,15 @@
                             <label class="block text-xs font-bold text-slate-400 uppercase mb-2">WhatsApp / Teléfono</label>
                             <input type="tel" name="telefono" required placeholder="+54 9 11 2612 7065" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 transition">
                         </div>
+
+                        <!-- CASILLA DE TÉRMINOS Y CONDICIONES (AGREGADA) -->
+                        <div class="flex items-start space-x-3 pt-2 pb-1">
+                            <input type="checkbox" id="terminos" name="acepta_terminos" required class="mt-1 w-4 h-4 bg-slate-800 border-slate-700 rounded text-amber-500 focus:ring-amber-500 cursor-pointer">
+                            <label for="terminos" class="text-xs text-slate-400 leading-relaxed cursor-pointer">
+                                Acepto los <a href="terminos.html" target="_blank" class="text-amber-400 underline hover:text-amber-300">Términos y Condiciones</a> para la prueba gratuita de 30 días de Vigix.
+                            </label>
+                        </div>
+
                         <button type="submit" id="form-button" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold py-4 rounded-xl shadow-lg shadow-amber-500/20 transition mt-2">
                             Enviar Solicitud de Demo
                         </button>
@@ -276,6 +285,7 @@
     <footer class="bg-slate-950 py-12 border-t border-slate-900 text-center text-xs text-slate-500">
         <div class="max-w-7xl mx-auto px-4 space-y-3">
             <div class="text-sm font-bold text-slate-300">Vigix — Plataforma de Control Operativo, Asistencia y Botón de Pánico</div>
+            <p><a href="terminos.html" class="hover:text-amber-400 transition underline">Términos y Condiciones</a></p>
             <p>&copy; 2026 Vigix S.A. Todos los derechos reservados.</p>
         </div>
     </footer>
